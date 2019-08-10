@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge Two</title>
+    
+    <script type="text/javascript">
+	// YOUR CODE HERE
+        function paste() {
+            var checkBox = document.getElementById("shippingBox");
+            var shipping = document.getElementById("shipping");
+            if(checkBox.checked){
+                var content = document.getElementById("billing").value;
+                shipping.value = content;
+                shipping.disabled = true;
+            } else {
+                shipping.value = "";
+                shipping.disabled = false;
+            }
+            var content = document.getElementById("billing").value;
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Challenge Two</h1>
+    <!-- Update the form element, but do not add or change any ids or classes. -->
+    <form action="ch3.html">
+      <fieldset>
+        <legend>Billing Information</legend>
+        <div>
+          <label for ="billing">Billing Address:</label><br>
+          <textarea name="billingAdd" id="billing"></textarea>
+          </label>
+        </div>
+
+        <div>
+          <label for ="home">Shipping Information:</label><br>
+          <input type="checkbox" name="useBilling" id="shippingBox" onclick="paste()"> Same as above
+          </label>
+        <br>
+        <textarea name="homeAdd" id="shipping"></textarea>
+        </div>
+        <input type = "submit" value = "Go To Challenge 3">
+      </fieldset>
+    </form>
+</body>
+</html>
