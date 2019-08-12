@@ -35,6 +35,8 @@ body{
 
 .item-box{
     margin: 2rem auto;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .item{
@@ -51,8 +53,11 @@ body{
     z-index: 1;
     text-align: center;
     color: darkslategray;
+    font-weight: normal;
+    font-size: 20px;
     margin: 0 auto;
 }
+
 .caption-content{
     text-align: center;
     width: 100%;
