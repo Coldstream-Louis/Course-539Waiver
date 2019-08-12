@@ -31,6 +31,7 @@ body{
 .row{
     z-index: 1;
     align-items: center;
+    text-align: center;
 }
 
 .item-box{
@@ -65,3 +66,25 @@ body{
 }
 
 .caption:hover{color: black}
+
+.head-text{
+    text-align: center;
+    color: white;
+    margin: 0 auto 2rem auto;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .head-text{
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+    .navbar{
+        line-height: 60px;
+        height: 80px;
+    }
+    .navbar-brand{
+        font-size: 30px;
+    }
+}
